@@ -1,0 +1,86 @@
+body{
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+
+button {
+    height: 50px;
+    margin: 2px;
+    font-size: 1.2em;
+    border-style: none;
+    background-color: #FF69B4;
+}
+
+
+button:hover {
+    color: #FFC0CB;
+    background-color: #008080;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.calculator {
+    position: relative;
+    top: 150px;
+    margin: 0 auto;
+    max-width: 300px;
+   
+}
+
+.calcButtons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin:0 auto;
+    background-color: #2F4F4F;
+    padding: 10px;
+}
+
+.calcButtons > button:nth-child(17) {
+ 
+    grid-column: 1/3;
+}
+
+.operator {
+    background-color: #EEE8AA;
+}
+
+.number {
+    background-color: #D2B48C;
+}
+
+.userInput {
+    position: relative;
+    height: 80px;
+    max-width: 100%;
+    text-align: right;
+    padding: 10px;
+    font-size: 25px;
+    border: 4px solid #2F4F4F;
+    background-color: #d6e0f5;
+}
+
+
+.calcButtons > button:nth-child(19) {
+
+    background-color: #20B2AA;
+}
+
+.userEntry {
+    position: absolute;
+    bottom: 0;
+    padding: 0;
+    margin: 5px;
+    right:0;
+}
+
+.finalCalc{
+
+    position: absolute;
+    right:0;
+    margin:15px;
+    top:0;
+    padding:0;
+}
